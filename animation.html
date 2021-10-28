@@ -1,0 +1,70 @@
+<head>
+
+    <style>
+@keyframes style1{
+    from{background-color:tomato;}
+    to{background-color: violet;}
+}
+@keyframes style2{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+}
+
+@keyframes style3{
+    0%{background-color: red; left:0px;top: 0px;}
+    25%{background-color: yellow;left: 200px;top: 30px;}
+    50%{background-color:royalblue;left: 200px;top: 200px;}
+    75%{background-color: seagreen;left: 0px;top: 200px;}
+    100%{background-color: tan;left: 0px;top: 0px;}
+}
+
+#animation{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    animation-name: style1 ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+#animation2{
+width: 100px;
+height: 100px;
+position: relative;
+background-color: aquamarine;
+animation: style2;
+animation-duration: 5s;
+animation-iteration-count: 5s;
+animation-fill-mode: both;
+animation-iteration-count: 1;
+}
+
+#animation3{
+    width: 100px;
+    height: 100px;
+    animation-name:style3 ;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+    </style>
+</head>
+
+
+
+<body>
+<div style="width: 600px; height: 300px;" id="animation">
+    <p>Animation text</p>
+</div>
+
+<div id="animation2">
+    <p>Random text</p>
+</div>
+
+<div id="animation3">
+    <p>% timing</p>
+</div>
+
+</body>
